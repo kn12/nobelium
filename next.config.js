@@ -1,6 +1,19 @@
 module.exports = {
   images: {
-    domains: ['gravatar.com']
+    loader: 'akamai',
+    path: '',
+    // 图片压缩
+    formats: ['image/avif', 'image/webp'],
+    // 允许next/image加载的图片 域名
+    domains: [
+      'gravatar.com',
+      'www.notion.so',
+      'avatars.githubusercontent.com',
+      'images.unsplash.com',
+      'source.unsplash.com',
+      'p1.qhimg.com',
+      'webmention.io'
+    ]
   },
   eslint: {
     // dirs: ['components', 'layouts', 'lib', 'pages']
